@@ -1,6 +1,4 @@
 import{select, mouse} from 'd3';
-//import * as d3 from 'd3';
-
 
 const tooltip = select('.container')
   .append('div')
@@ -41,7 +39,7 @@ function enableTooltip(selection){
           + "<span style='color:black'>" + "State:" + d.state + "<br>")
     })
     .on ('mouseover', function(d) {
-        tooltip
+      tooltip
         .style("opacity", 1)
         select(this)
         .style("stroke", "#404344")
@@ -49,7 +47,7 @@ function enableTooltip(selection){
         .style("opacity", 1)
       })
      .on('mouseleave', function(d){
-        tooltip
+      tooltip
         .style('opacity',0)
         select(this)
         //.style("stroke", "none")

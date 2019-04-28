@@ -4,10 +4,10 @@ import {select, max, scaleOrdinal, scaleSqrt, mean,
 	forceY,
 	forceCollide,
 	scalePoint,
-    rgb
+  rgb
 } from 'd3';
 import { enableTooltip } from './tooltip'
-import table from './table';
+import table from './table'
 import reasonlabels from './reasonlabels';
 
 export default function Chart(rootDom, data){

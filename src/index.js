@@ -5,9 +5,6 @@ import {select, max, dispatch} from 'd3';
 import {
 	dataPromise
 } from './data';
-import {
-    indicatorsByYear
-} from './utils';
 
 import Chart from './viewModules/Chart';
 import bubblechart from './viewModules/bubblechart';
@@ -47,9 +44,11 @@ select("#selectButton").on("change", function(d) {
 		const dataByYear = data
          .filter(d => d.key == YEAR)[0]
          .values; 
-        console.log(dataByYear);
+   select(reasonlabels)
+     .remove()
+        //console.log(dataByYear);
 	    renderbubblechart(dataByYear);
-	    //remove(reasonlabels);
+	    
 	});     
 });
 
@@ -59,9 +58,10 @@ select("#all").on('click', function(d){
 		const dataByYear = data
          .filter(d => d.key == YEAR)[0]
          .values; 
-        console.log(dataByYear);
+        //console.log(dataByYear);
 	    renderbubblechart(dataByYear);
-	    //remove(reasonlabels);
+	    select(reasonlabels)
+        .remove()
 	});  
 
 });
@@ -71,7 +71,7 @@ select("#reasons").on('click', function(d){
 		const dataByYear = data
          .filter(d => d.key == YEAR)[0]
          .values; 
-        console.log(dataByYear);
+        //console.log(dataByYear);
 	    renderchart(dataByYear);
 	});  
 });

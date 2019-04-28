@@ -1,12 +1,12 @@
-html,body{
+html,body {
   margin:0;
-  padding:0;
+  padding:10;  
 }
 
 .container {
   max-width: 1500px;
   margin: auto;
- position:relative;
+  position:relative;
 }
 
 .chart{
@@ -28,16 +28,26 @@ h1{
   margin-bottom: 5px;
 }
 
-h8{
+h2{
   text-align: center;
   font-family: Gillsans;
-  color: black;
-  font-size: 16px;
-  margin-top: 2px;
-  margin-bottom: 5px;
+  color: grey;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-h6, h5, label{
+
+h3{
+  text-align: right;
+  font-family: Gillsans italic;
+  color: grey;
+  font-size: 6px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+h6, label{
   text-align: left;
   font-family: Gillsans;
   color: black;
@@ -72,4 +82,13 @@ p{
   font-size: 16px;
   margin-top: 25px;
   margin-bottom: 5px;
+}
+
+h7,h8,h9{
+  text-align: center;
+  font-family: Gillsans;
+  color: black;
+  font-size: 16px;
+  margin-top: 2px;
+  margin-bottom: 20px;
 }

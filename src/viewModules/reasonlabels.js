@@ -23,12 +23,12 @@ const plot = svg.merge(svgEnter)
     .attr('transform', `translate(${margin.l}, ${margin.t})`);
 
 const home = ['home_improvement']
-  const business = ['small_business']
-  const energy = ['renewable_energy']
-  const purchase = ['major_purchase']
-  const debt = ['debt_consolidation']
-  const reasonlabels = ['debt','credit_card','house','car','other','vacation','home','small','purchase', 'medical','energy','moving', 'wedding','educational']
-  console.log(reasonlabels);
+const business = ['small_business']
+const energy = ['renewable_energy']
+const purchase = ['major_purchase']
+const debt = ['debt_consolidation']
+const reasonlabels = ['debt','credit_card','house','car','other','vacation','home','small','purchase', 'medical','energy','moving', 'wedding','educational']
+//console.log(reasonlabels);
 
  const label = select('.plot')
       .selectAll('.chart-label')
@@ -70,6 +70,7 @@ const home = ['home_improvement']
         return 930
       })
       .attr('fill', '#525252')
+      .attr('font-family', 'Gillsans')
       .attr('text-anchor', 'middle'); 
 
 }

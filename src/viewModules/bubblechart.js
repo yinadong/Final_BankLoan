@@ -6,7 +6,8 @@ import {select, max, scaleOrdinal, scaleSqrt, mean,
   rgb
 } from 'd3';
 import { enableTooltip } from './tooltip'
-import table from './table';
+import table from './table'
+import reasonlabels from './reasonlabels';
 
 
 export default function bubblechart(rootDOM, data){
@@ -90,6 +91,7 @@ export default function bubblechart(rootDOM, data){
     .attr('height', H)
     .select('.plot')
     .attr('transform', `translate(${margin.l}, ${margin.t})`)
+   //.remove(reasonlabels);
 
   const nodes = plot.selectAll('.node')
     .data(indicator, d => d.state);
